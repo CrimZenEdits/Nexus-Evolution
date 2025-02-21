@@ -1,0 +1,30 @@
+/* Customize font and shadows */
+:root {
+    /* Font settings */
+    --font: 'Roboto', sans-serif;
+    body {
+        font-family: var(--font);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        text-size-adjust: 100%;
+    }
+
+    /* 3D Text Shadow */
+    --text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3), 
+                   2px 2px 0 rgba(0, 0, 0, 0.2), 
+                   3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Heading and paragraph styles */
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: var(--text-shadow); /* Apply 3D shadow to all headings */
+}
+
+p, blockquote {
+    text-shadow: var(--text-shadow); /* Apply 3D shadow to paragraphs and blockquotes */
+}
+
+/* General text shadow for all text */
+body, input, select, textarea, a, button {
+    text-shadow: var(--text-shadow); /* Apply 3D shadow to various elements */
+}
